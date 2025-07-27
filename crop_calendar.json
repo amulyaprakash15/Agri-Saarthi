@@ -1,0 +1,17 @@
+[
+  {
+    "region": "Karnataka",
+    "month": "July",
+    "crops": ["Rice", "Maize", "Tur"]
+  },
+  {
+    "region": "Karnataka",
+    "month": "August",
+    "crops": ["Ragi", "Jowar"]
+  },
+  {
+    "region": "Tamil Nadu",
+    "month": "July",
+    "crops": ["Sugarcane", "Paddy"]
+  }
+]

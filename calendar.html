@@ -1,0 +1,25 @@
+<!-- templates/calendar.html -->
+{% extends "base.html" %}
+{% block content %}
+<section class="reveal">
+    <h2>📅 Crop Calendar</h2>
+    <form method="POST">
+        <label>Region:</label>
+        <input type="text" name="region" required placeholder="e.g., Karnataka">
+
+        <label>Month:</label>
+        <input type="text" name="month" required placeholder="e.g., July">
+
+        <button type="submit">Get Suitable Crops</button>
+    </form>
+
+    {% if crops %}
+    <h3>Recommended Crops:</h3>
+    <ul>
+        {% for crop in crops %}
+        <li>{{ crop }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+</section>
+{% endblock %}

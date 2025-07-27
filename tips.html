@@ -1,0 +1,28 @@
+<!-- templates/tips.html -->
+{% extends "base.html" %}
+{% block content %}
+<section class="reveal">
+    <h2>💬 Ask for Farming Tips</h2>
+    <input type="text" id="query" placeholder="Ask something like 'Tomato pest tips'" />
+    <button onclick="getTip()">Get Tip</button>
+    <div id="response-box" class="result-box"></div>
+</section>
+
+<script>
+function getTip() {
+    const query = document.getElementById('query').value;
+    fetch('/tips', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ query: query })
+    })
+    .then(response => response.json())
+    .then(data => {
+        document.getElementById('response-box').innerText = data.response;
+    })
+    .catch(err => {
+        document.getElementById('response-box').innerText = '⚠️ Error fetching tip.';
+    });
+}
+</script>
+{% endblock %}

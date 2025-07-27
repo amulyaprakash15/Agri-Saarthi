@@ -1,0 +1,33 @@
+<!-- templates/base.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AgriSaarthi</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/scrollreveal.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>🌱 AgriSaarthi</h1>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/calendar">Crop Calendar</a></li>
+                <li><a href="/disease">Disease Detector</a></li>
+                <li><a href="/tips">Farming Tips</a></li>
+                <li><a href="/translator">Translator</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <p>© 2025 AgriSaarthi | Empowering Farmers with AI 🌾</p>
+    </footer>
+</body>
+</html>

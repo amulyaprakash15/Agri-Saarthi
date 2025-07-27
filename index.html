@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AgroSense</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">🌾 AgroSense</div>
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/calendar">Crop Calendar</a></li>
+      <li><a href="/tips">Tips</a></li>
+      <li><a href="/translator">Translator</a></li>
+      <li><a href="/disease">Disease Detector</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <h1>Welcome to <span>AgroSense</span></h1>
+    <p>Your AI-Powered Smart Agriculture Assistant</p>
+    <a href="#features" class="btn">Explore Features</a>
+  </header>
+
+  <section id="features" class="features-section">
+    <div class="feature-card">
+      <h2>🌱 Smart Crop Calendar</h2>
+      <p>Plan your crop cycles based on region and season with AI assistance.</p>
+      <a href="/calendar" class="feature-btn">Try Now →</a>
+    </div>
+
+    <div class="feature-card">
+      <h2>🧪 Disease Predictor</h2>
+      <p>Upload leaf images and get disease diagnosis and treatment suggestions.</p>
+      <a href="/disease" class="feature-btn">Detect Disease →</a>
+    </div>
+
+    <div class="feature-card">
+      <h2>💡 Farming Tips</h2>
+      <p>Ask farming questions and get AI-backed answers and tips instantly.</p>
+      <a href="/tips" class="feature-btn">Ask Tips →</a>
+    </div>
+
+    <div class="feature-card">
+      <h2>🌐 Translator</h2>
+      <p>Translate messages and guides into your local language.</p>
+      <a href="/translator" class="feature-btn">Translate Now →</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 AgroSense. Empowering Farmers with AI.</p>
+  </footer>
+
+</body>
+</html>

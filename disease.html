@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Disease Detector | AgroSense</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to right, #e0f7e9, #f7ffe0);
+      color: #333;
+    }
+
+    nav {
+      background-color: #fff;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #27ae60;
+    }
+
+    .nav-links a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #27ae60;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 2rem;
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #27ae60;
+      margin-bottom: 1rem;
+    }
+
+    p.description {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      color: #666;
+    }
+
+    .feature {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .feature-icon {
+      font-size: 2rem;
+      margin-right: 1rem;
+    }
+
+    .feature-title {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #2d3436;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 4rem;
+      padding: 1rem;
+      color: #888;
+      font-size: 0.9rem;
+    }
+
+    @media screen and (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nav-links {
+        margin-top: 1rem;
+      }
+
+      .container {
+        margin: 1rem;
+        padding: 1.5rem;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      .feature-title {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">🌾 AgroSense</div>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="/calendar">Crop Calendar</a>
+      <a href="/tips">Tips</a>
+      <a href="/translate">Translator</a>
+      <a href="/chat">Chatbot</a>
+      <a href="/disease">Disease Detector</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1>🌿 Disease Detector</h1>
+    <p class="description">Upload an image of your crop's leaf or plant part to diagnose disease using AI-powered prediction tools.</p>
+
+    <div class="feature">
+      <div class="feature-icon">🧠</div>
+      <div>
+        <div class="feature-title">AI-Based Diagnosis</div>
+        <div>Detect common plant diseases using advanced image recognition technology.</div>
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="feature-icon">🧪</div>
+      <div>
+        <div class="feature-title">Instant Recommendations</div>
+        <div>Get quick tips and organic solutions for treating crop diseases.</div>
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="feature-icon">🌍</div>
+      <div>
+        <div class="feature-title">Localized Suggestions</div>
+        <div>Find nearby agriculture centers and fertilizer shops for assistance.</div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 AgroSense. Empowering Farmers with AI.
+  </footer>
+</body>
+</html>
